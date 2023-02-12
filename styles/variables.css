@@ -1,0 +1,46 @@
+:root {
+  /* COLORS BLOCKS */
+  --color-blocks-main-one: #ffffff;
+  --color-blocks-main-two: #18cfab;
+  --color-blocks-main-three: #1c2a33;
+  --color-blocks-secondary: #717171;
+
+  --color-footer: #22353f;
+
+  /* COLORS SHIFTS */
+  --color-shifts-main: #ffffff;
+  --color-shifts-header-secondary: #18cfab;
+  --color-shifts-header-third: #d4d4d4;
+
+  --color-shifts-titles: #4e4e4e;
+
+  --color-shifts-tubs-title: #717171;
+  --color-shifts-tubs-text: #777777;
+
+  --color-shifts-secondary-block-four: #d8d8d8;
+  --color-shifts-secondary-block-five: #8a8a8a;
+  --color-shifts-secondary-block-reviews: #bbbbbb;
+
+  --color-shifts-footer: #aeaeae;
+
+  --color-shifts-buttons: #ffffff;
+
+  /* FONT SIZE */
+  --font-size-header-title: 32px;
+  --font-size-menu: 16px;
+
+  --font-size-site-main-text: 78px;
+  --font-size-header-secondary: 35px;
+  --font-size-header-third: 34px;
+
+  --font-size-icons-text: 20px;
+
+  --font-size-titles: 36px;
+
+  --font-size-tubs-title: 16px;
+  --font-size-tubs-text: 14px;
+
+  --color-shifts-footer: 14px;
+
+  --color-shifts-buttons: 14px;
+}

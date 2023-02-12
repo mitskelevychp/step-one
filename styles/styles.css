@@ -1,0 +1,248 @@
+@import "./variables.css";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Light.ttf), url(../fonts/Montserrat-Light.woff2);
+  font-size: light;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf),
+    url(../fonts/Montserrat-Regular.woff2);
+  font-size: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.ttf), url(../fonts/Montserrat-Bold.woff2);
+  font-size: bold;
+  font-weight: 700;
+}
+
+/*  */
+
+html {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", serif;
+}
+
+/* body-wrapper {
+  position: relative;
+  margin: 0 auto;
+} */
+
+.container {
+  width: 1160px;
+}
+
+.container,
+.header-wrapper,
+.header,
+.header-logo,
+.header-logo__icon,
+.nav,
+.nav__list,
+.header__search-icon,
+.main-block,
+.main-block__text-wrapper {
+  display: flex;
+}
+
+.main-block {
+  background-image: url("../images/background/background-header.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* delete after content */
+  height: 1012px;
+  /* width: 1920px; */
+  /* delete after content */
+  /* margin-top: 5px; */
+}
+
+.header-wrapper {
+  position: absolute;
+  background: rgba(94, 93, 88, 0.6);
+  justify-content: center;
+}
+
+.header {
+  justify-content: space-between;
+  height: 120px;
+  width: 1160px;
+}
+
+.header-logo {
+  align-items: center;
+  justify-content: space-between;
+  width: 198px;
+}
+
+.header-logo__icon {
+  background-image: url(../images/icons/logo.png);
+  width: 58px;
+  height: 67px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo__icon span {
+  color: var(--color-blocks-main-one);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.header-logo__title-one {
+  font-size: 32px;
+  color: var(--color-blocks-main-one);
+  line-height: 48px;
+}
+
+.header-logo__title-two {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-blocks-main-two);
+  line-height: 48px;
+}
+
+.nav {
+  align-items: center;
+}
+
+.nav__list {
+  width: 615px;
+  justify-content: space-between;
+}
+
+.nav__list-item {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav__list-item:hover {
+  color: var(--color-blocks-main-two);
+  margin-bottom: -50px;
+}
+
+.nav__list-item:hover::after {
+  content: "";
+  border-bottom: 2px solid var(--color-blocks-main-two);
+  display: block;
+  padding-bottom: 48px;
+}
+
+.header__search-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 21px;
+}
+
+.header__search-icon-wrapper img {
+  width: 21px;
+  height: 20px;
+}
+
+.fa-magnifying-glass {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fa-magnifying-glass:hover {
+  color: var(--color-blocks-main-two);
+  cursor: pointer;
+}
+
+.main-block {
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-block__text-wrapper {
+  margin-top: 379px;
+  flex-direction: column;
+  height: 213px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-block__title-above {
+  font-size: 35px;
+  color: var(--color-blocks-main-one);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-block__title-above-second-part {
+  color: var(--color-blocks-main-two);
+}
+
+.main-block__main-title {
+  font-size: 78px;
+  font-weight: 700;
+  color: var(--color-blocks-main-one);
+  text-transform: uppercase;
+}
+
+.main-block__title-under {
+  text-transform: capitalize;
+  font-size: 34px;
+  color: #d4d4d4;
+}
+
+.main-block__button-wrapper {
+  margin-top: 122px;
+  display: flex;
+  justify-content: space-between;
+  width: 364px;
+  position: relative;
+}
+
+.main-block__button {
+  width: 169px;
+  height: 68px;
+  border-radius: 5px;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-blocks-main-one);
+  text-align: center;
+}
+
+.main-block__button-background {
+  position: absolute;
+  z-index: 0;
+  background-color: var(--color-blocks-main-one);
+}
+
+.main-block__button-one {
+  background-color: var(--color-blocks-main-two);
+  margin-top: 4.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-block__button-two {
+  background-color: #00cbf6;
+  margin-top: 4.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-block__button-background-two {
+  left: 195px;
+}

@@ -1,0 +1,29 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+ol,
+ul,
+li,
+aside,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
