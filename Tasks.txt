@@ -32,5 +32,3 @@ https://pages.github.com/
 pages або Gitlab pages
 https://docs.gitlab.com/ee/user/project/pages/
 (Не забудьте потім додати посилання на резюме).
-
-change 2
