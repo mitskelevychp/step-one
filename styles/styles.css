@@ -26,7 +26,6 @@
 
 html {
   min-width: 1200px;
-  /* margin: 0 auto; */
 }
 
 body {
@@ -40,6 +39,7 @@ body {
 
 .container {
   width: 1160px;
+  margin: 0 auto;
 }
 
 /* ------------------- GENERAL SETTINGS ------------------- */
@@ -212,7 +212,7 @@ body {
   position: relative;
 }
 
-.main-block__button {
+.button {
   width: 169px;
   height: 68px;
   border-radius: 5px;
@@ -226,7 +226,8 @@ body {
   display: block;
 }
 
-.main-block__button-one {
+.main-block__button-one,
+.purchase-button {
   background-color: var(--color-blocks-main-two);
   margin-top: 4.75px;
   display: flex;
@@ -352,3 +353,148 @@ body {
 }
 
 /* ------------------- BLOCK 2 - ADVANTAGES ------------------- */
+
+/* ------------------- BLOCK 3 - OUR SERVICES ------------------- */
+.services-wrapper {
+  margin-top: 92px;
+  margin-bottom: 91px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__title {
+  text-transform: capitalize;
+  color: var(--color-shifts-titles);
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 28px;
+}
+
+.decor-line {
+  width: 76px;
+  border-top: 1px solid var(--color-shifts-header-secondary);
+}
+
+.decor-line:nth-child(2) {
+  border-top: 1px solid var(--color-shifts-header-secondary);
+  margin-bottom: 4px;
+  margin-right: 13px;
+}
+
+.services__tabs {
+  margin-top: 67px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services__tabs-title {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 195px;
+  height: 76px;
+  background-color: #F8FCFE;
+  border: 1px solid #F2F2F2;
+  color: var(--color-blocks-secondary);
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.services__tabs-title:hover {
+  border: 1.5px solid var(--color-blocks-main-two);
+}
+
+.services-item-aktive {
+  background-color: var(--color-blocks-main-two);
+  border: 0;
+  color: var(--color-blocks-main-one);
+}
+
+.services-item-aktive::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  margin-top: 70px;
+  background-color: var(--color-blocks-main-two);
+}
+
+.services__tabs-content {
+  margin-top: 26px;
+}
+
+.services__tabs-content li {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 300;
+  line-height: 24.37px;
+  font-size: 13.64px;
+  color: var(--color-shifts-tubs-text);
+}
+
+.services__tabs-content img {
+  width: 194px;
+  height: 139px;
+  margin-right: 13px;
+}
+/* ------------------- BLOCK 3 - OUR SERVICES ------------------- */
+
+/* ------------------- BLOCK 4 - PURCHASE BUTTON ------------------- */
+
+/* ------------------- BLOCK 4 - PURCHASE BUTTON ------------------- */
+.purchase-button-wrapper {
+  background-image: url("../images/background/background.jpg");
+  background-position-y: 47%;
+  background-size: cover;
+  height: 476px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 
+.purchase-button-wrapper:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+} */
+
+/* .purchase-button-wrapper p,
+.purchase-button-wrapper a {
+  position: absolute;
+  z-index: 1;
+} */
+
+.purchase-button-wrapper p:nth-child(1) {
+  color: var(--color-blocks-main-two);
+}
+
+.purchase-button-wrapper p:nth-child(2) {
+  color: var(--color-blocks-main-two);
+}
+
+.purchase-button {
+  position: relative;
+  z-index: 0;
+}
+
+.purchase-button::after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  z-index: 1;
+  background-color: var(--color-blocks-main-one);
+  width: 169px;
+  height: 68px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+
+
+
+}

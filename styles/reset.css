@@ -21,6 +21,10 @@ section {
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 ol,
