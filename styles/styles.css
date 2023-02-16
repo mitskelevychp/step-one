@@ -249,7 +249,7 @@ body {
   background-color: var(--color-blocks-main-one);
 }
 
-.main-block__button-background:last-child {
+.main-block__button-background:nth-child(3) {
   left: 195px;
 }
 
@@ -363,7 +363,7 @@ body {
   align-items: center;
 }
 
-.services__title {
+h2 {
   text-transform: capitalize;
   color: var(--color-shifts-titles);
   font-size: 36px;
@@ -399,7 +399,6 @@ body {
   background-color: #F8FCFE;
   border: 1px solid #F2F2F2;
   color: var(--color-blocks-secondary);
-  font-size: 16px;
   line-height: 40px;
 }
 
@@ -444,57 +443,91 @@ body {
 /* ------------------- BLOCK 3 - OUR SERVICES ------------------- */
 
 /* ------------------- BLOCK 4 - PURCHASE BUTTON ------------------- */
-
-/* ------------------- BLOCK 4 - PURCHASE BUTTON ------------------- */
-.purchase-button-wrapper {
+.purchase-section-wrapper {
   background-image: url("../images/background/background.jpg");
   background-position-y: 47%;
   background-size: cover;
-  height: 476px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* 
-.purchase-button-wrapper:after {
+
+.purchase-section-wrapper:after {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 478px;
   position: absolute;
+  z-index: 0;
   background-color: rgba(0, 0, 0, 0.75);
-  z-index: 0;
-} */
+}
 
-/* .purchase-button-wrapper p,
-.purchase-button-wrapper a {
-  position: absolute;
+.purchase-section-wrapper p:nth-child(1) {
+  color: var(--color-blocks-main-two);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
   z-index: 1;
-} */
-
-.purchase-button-wrapper p:nth-child(1) {
-  color: var(--color-blocks-main-two);
+  margin-top: 126px;
+  text-transform: uppercase;
 }
 
-.purchase-button-wrapper p:nth-child(2) {
-  color: var(--color-blocks-main-two);
+.purchase-section-wrapper p:nth-child(2) {
+  color: var(--color-shifts-secondary-block-four);
+  z-index: 1;
+  margin: 12px 0px 60px;
+  line-height: 40px;
+
 }
 
-.purchase-button {
+.purchase-section__button-wrapper {
+  z-index: 1;
+  margin-bottom: 128px;
+}
+
+.purchase-section__button {
   position: relative;
-  z-index: 0;
-}
-
-.purchase-button::after {
-  content: "";
-  /* display: block; */
-  position: absolute;
   z-index: 1;
-  background-color: var(--color-blocks-main-one);
-  width: 169px;
-  height: 68px;
-  border-radius: 5px;
-  margin-bottom: 50px;
-
-
-
+  margin-top: 4px;
 }
+/* ------------------- BLOCK 4 - PURCHASE BUTTON ------------------- */
+
+/* ------------------- BLOCK 5 - WORK EXAMPLES ------------------- */
+.work-examples-background {
+  background-color: var(--color-blocks-third);
+}
+
+.work-examples-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 95px;
+}
+
+.work-examples__tabs {
+  margin: 67px 0px 69px;
+  display: flex;
+}
+
+.work-examples__tabs-title {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blocks-third);
+  border: 1px solid #DADADA;
+  color: var(--color-blocks-secondary);
+  font-size: 14px;
+  line-height: 42px;
+  padding: 14px 15px 13px;
+}
+
+.work-examples__tabs-title:first-child {
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
+.work-examples-aktive {
+  border: solid 2px var(--color-blocks-main-two);
+  color: var(--color-blocks-main-two);
+}
+/* ------------------- BLOCK 5 - WORK EXAMPLES ------------------- */

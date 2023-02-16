@@ -12,9 +12,11 @@
             type="image/x-icon"
         />
         <script
+            defer
             src="https://kit.fontawesome.com/68cac04c04.js"
             crossorigin="anonymous"
         ></script>
+        <script defer src="./scripts/scripts.js"></script>
     </head>
     <body>
         <!-- HEADER START -->
@@ -103,7 +105,7 @@
 
         <!-- BLOCK 3 - OUR SERVICES - START -->
         <div class="services-wrapper container">
-            <h2 class="services__title">our services</h2>
+            <h2>our services</h2>
             <div class="decor-line"></div>
             <div class="decor-line"></div>
             <ul class="services__tabs">
@@ -214,18 +216,41 @@
         <!-- BLOCK 3 - OUR SERVICES - FINISH -->
 
         <!-- BLOCK 4 - PURCHASE BUTTON  - START -->
-        <div class="purchase-button-wrapper">
+        <div class="purchase-section-wrapper">
             <p>Everything is ready. just buy and install now</p>
             <p>
                 Smooth reliable, responsive ready, perfect portfolio, unique
                 blog layout and many many options for you
             </p>
-            <a href="#" class="button purchase-button">
-                <span>purchase now</span>
-            </a>
-            <!-- <div class="button main-block__button-background"></div> -->
+            <div class="purchase-section__button-wrapper">
+                <div class="button main-block__button-background"></div>
+                <a
+                    href="#"
+                    class="button purchase-button purchase-section__button"
+                >
+                    <span>purchase now</span>
+                </a>
+            </div>
         </div>
         <!-- BLOCK 4 - PURCHASE BUTTON  - FINISH -->
-        <script src="./scripts/scripts.js"></script>
+
+        <!-- BLOCK 5 - WORK EXAMPLES  - FINISH -->
+        <div class="work-examples-background">
+            <div class="work-examples-wrapper container">
+                <h2>Our Amazing Work</h2>
+                <div class="decor-line"></div>
+                <div class="decor-line"></div>
+                <ul class="work-examples__tabs">
+                    <li class="work-examples__tabs-title work-examples-aktive">
+                        All
+                    </li>
+                    <li class="work-examples__tabs-title">Graphic Design</li>
+                    <li class="work-examples__tabs-title">Web Design</li>
+                    <li class="work-examples__tabs-title">Landing Pages</li>
+                    <li class="work-examples__tabs-title">Wordpress</li>
+                </ul>
+            </div>
+        </div>
+        <!-- BLOCK 5 - WORK EXAMPLES  - FINISH -->
     </body>
 </html>
