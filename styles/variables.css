@@ -5,6 +5,7 @@
   --color-blocks-main-three: #1c2a33;
   --color-blocks-secondary: #717171;
   --color-blocks-third: #E9EDEF;
+  --color-post-date: #203E38;
 
   --color-footer: #22353f;
 
@@ -28,7 +29,6 @@
 
   /* FONT SIZE */
   --font-size-header-title: 32px;
-  --font-size-menu: 16px;
 
   --font-size-site-main-text: 78px;
   --font-size-header-secondary: 35px;
@@ -38,10 +38,5 @@
 
   --font-size-titles: 36px;
 
-  --font-size-tubs-title: 16px;
-  --font-size-tubs-text: 14px;
-
-  --color-shifts-footer: 14px;
-
-  --color-shifts-buttons: 14px;
+  --font-size-small: 14px;
 }

@@ -519,7 +519,7 @@ h2 {
   background-color: var(--color-blocks-third);
   border: 1px solid #DADADA;
   color: var(--color-blocks-secondary);
-  font-size: 14px;
+  font-size: var(--font-size-small);
   line-height: 42px;
   padding: 14px 15px 13px;
   cursor: pointer;
@@ -595,7 +595,7 @@ h2 {
 .work-examples__tabs-content__first-cell-wrapper p:nth-child(2) {
   text-transform: uppercase;
   color: var(--color-blocks-main-two);
-  font-size: 14px;
+  font-size: var(--font-size-small);
   font-weight: 700;
   line-height: 25px;
 }
@@ -618,5 +618,48 @@ h2 {
 /* ------------------- BLOCK 5 - WORK EXAMPLES ------------------- */
 
 /* ------------------- BLOCK 6 - POSTS ------------------- */
+.posts-wrapper {
+  margin-top: 84px;
+  margin-bottom: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.posts {
+  margin-top: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-wrapper {
+  margin-bottom: 44px;
+  position: relative;
+}
+
+.post_date {
+  position: absolute;
+  right: 0;
+  width: 66px;
+  height: 64px;
+  background-color: var(--color-post-date);
+  color: var(--color-blocks-main-one);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post_date p {
+  text-transform: capitalize;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.under-title p {
+  text-transform: capitalize;
+}
 /* ------------------- BLOCK 6 - POSTS ------------------- */
