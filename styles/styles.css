@@ -124,10 +124,10 @@ body {
 }
 
 .nav__list li {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .nav__list li:hover {
@@ -273,7 +273,7 @@ body {
   background-color: var(--color-blocks-main-three);
 }
 
-.advantages:nth-child(2){
+.advantages:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -397,8 +397,8 @@ h2 {
   position: relative;
   width: 195px;
   height: 76px;
-  background-color: #F8FCFE;
-  border: 1px solid #F2F2F2;
+  background-color: #f8fcfe;
+  border: 1px solid #f2f2f2;
   color: var(--color-blocks-secondary);
   line-height: 40px;
   cursor: pointer;
@@ -478,7 +478,6 @@ h2 {
   z-index: 1;
   margin: 12px 0px 60px;
   line-height: 40px;
-
 }
 
 .purchase-section__button-wrapper {
@@ -517,7 +516,7 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: var(--color-blocks-third);
-  border: 1px solid #DADADA;
+  border: 1px solid #dadada;
   color: var(--color-blocks-secondary);
   font-size: var(--font-size-small);
   line-height: 42px;
@@ -636,9 +635,11 @@ h2 {
 .post-wrapper {
   margin-bottom: 44px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.post_date {
+.post__date {
   position: absolute;
   right: 0;
   width: 66px;
@@ -651,15 +652,45 @@ h2 {
   justify-content: center;
 }
 
-.post_date p {
+.post__date p {
   text-transform: capitalize;
+}
+
+.post__text-wrapper {
+  margin: 4px 55px 12px 13px;
+  width: 197px;
 }
 
 h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
   text-transform: capitalize;
+  color: var(--color-shifts-tubs-title);
+}
+
+.under-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 184px;
 }
 
 .under-title p {
-  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 300;
+  color: var(--color-shifts-tubs-text);
+  margin-top: -10px;
+}
+
+.under-title p:first-child::after {
+  content: "";
+  border-right: 1px solid var(--color-shifts-tubs-text);
+  margin-left: 18px;
+}
+
+.under-title p:first-letter {
+  text-transform: uppercase;
 }
 /* ------------------- BLOCK 6 - POSTS ------------------- */
