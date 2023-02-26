@@ -445,7 +445,7 @@ h2 {
 /* ------------------- BLOCK 3 - OUR SERVICES ------------------- */
 
 /* ------------------- BLOCK 4 - PURCHASE BUTTON ------------------- */
-.purchase-section-wrapper {
+.purchase-wrapper {
   background-image: url("../images/background/background.jpg");
   background-position-y: 47%;
   background-size: cover;
@@ -454,7 +454,7 @@ h2 {
   align-items: center;
 }
 
-.purchase-section-wrapper:after {
+.purchase-wrapper:after {
   content: "";
   width: 100%;
   height: 478px;
@@ -463,7 +463,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.purchase-section-wrapper p:nth-child(1) {
+.purchase-wrapper p:nth-child(1) {
   color: var(--color-blocks-main-two);
   font-weight: 700;
   font-size: 40px;
@@ -473,19 +473,19 @@ h2 {
   text-transform: uppercase;
 }
 
-.purchase-section-wrapper p:nth-child(2) {
+.purchase-wrapper p:nth-child(2) {
   color: var(--color-shifts-secondary-block-four);
   z-index: 1;
   margin: 12px 0px 60px;
   line-height: 40px;
 }
 
-.purchase-section__button-wrapper {
+.purchase__button-wrapper {
   z-index: 1;
   margin-bottom: 128px;
 }
 
-.purchase-section__button {
+.purchase__button {
   position: relative;
   z-index: 1;
   margin-top: 4px;
@@ -693,4 +693,130 @@ h3 {
 .under-title p:first-letter {
   text-transform: uppercase;
 }
+
+.post-wrapper:hover h3 {
+  color: var(--color-blocks-main-two);
+}
+
+.post-wrapper:hover .post__date {
+  background-color: var(--color-blocks-main-two);
+}
 /* ------------------- BLOCK 6 - POSTS ------------------- */
+
+/* ------------------- BLOCK 7 - REVIEWS ------------------- */
+.reviews-background {
+  background-image: url("../images/background/background-reviews.jpg");
+  background-position-y: 30%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-background:after {
+  content: "";
+  width: 100%;
+  height: 1400px;
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.reviews-wrapper {
+  margin: 100px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.reviews-wrapper h2 {
+  color: var(--color-blocks-main-one);
+}
+
+.reviews-icon {
+  margin: 66px 0px 37px;
+}
+
+.review {
+  color: var(--color-shifts-secondary-block-reviews);
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.review__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.review__text p {
+  text-align: center;
+}
+
+.review__name {
+  text-transform: uppercase;
+  color: var(--color-blocks-main-two);
+  font-weight: 700;
+  line-height: 27px;
+  margin-top: 30px;
+}
+
+.review__position {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.review__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review__photo img {
+  border-radius: 50%;
+  border: solid 12px rgb(31, 218, 181, 0.2);
+  z-index: 1;
+  width: 143px;
+}
+
+.review__carousel {
+  margin: 51px 0px 96px;
+  display: flex;
+  align-items: center;
+}
+
+.review__carousel img {
+  border-radius: 50%;
+  border: solid 5px rgb(31, 218, 181, 0.2);
+  z-index: 1;
+  width: 61px;
+  margin: 0px 13px;
+}
+
+.review__carousel__arrow {
+  width: 31px;
+  height: 31px;
+  border: 1px solid var(--color-shifts-secondary-block-reviews);
+}
+
+.review__carousel__arrow:first-child {
+  margin-right: 17px;
+}
+
+.review__carousel__arrow:first-child::before {
+  content: "";
+  width: 7px;
+  height: 12px;
+  border: 2px solid var(--color-shifts-secondary-block-reviews);
+  /* border-bottom: 2px solid var(--color-shifts-secondary-block-reviews); */
+  margin-left: 12px;
+}
+
+.review__carousel__arrow:last-child {
+  margin-left: 17px;
+}
+/* ------------------- BLOCK 7 - REVIEWS ------------------- */
