@@ -807,16 +807,47 @@ h3 {
   margin-right: 17px;
 }
 
-.review__carousel__arrow:first-child::before {
+.review__carousel__arrow-left::before {
   content: "";
-  width: 7px;
-  height: 12px;
-  border: 2px solid var(--color-shifts-secondary-block-reviews);
-  /* border-bottom: 2px solid var(--color-shifts-secondary-block-reviews); */
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid var(--color-shifts-secondary-block-reviews);
+  border-bottom: 2px solid var(--color-shifts-secondary-block-reviews);
   margin-left: 12px;
+  margin-top: 9.5px;
+  transform: rotate(45deg);
+}
+
+.review__carousel__arrow-right::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--color-shifts-secondary-block-reviews);
+  border-top: 2px solid var(--color-shifts-secondary-block-reviews);
+  margin-left: 8px;
+  margin-top: 9.5px;
+  transform: rotate(45deg);
 }
 
 .review__carousel__arrow:last-child {
   margin-left: 17px;
 }
 /* ------------------- BLOCK 7 - REVIEWS ------------------- */
+
+/* ------------------- BLOCK 8 - GALLERY ------------------- */
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-wrapper h2 {
+  margin-top: 109px;
+}
+
+.gallery {
+  margin-top: 72px;
+}
+/* ------------------- BLOCK 8 - GALLERY ------------------- */
