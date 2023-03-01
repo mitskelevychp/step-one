@@ -223,22 +223,24 @@ body {
   font-weight: 700;
   color: var(--color-blocks-main-one);
   text-align: center;
-  display: block;
-}
-
-.main-block__button-one,
-.purchase-button,
-.work-examples__button {
-  background-color: var(--color-blocks-main-two);
-  margin-top: 4.75px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.main-block__button-one,
+.purchase-button,
+.load-button {
+  background-color: var(--color-blocks-main-two);
+}
+
+.main-block__button-one,
+.main-block__button-two {
+  margin-top: 4.75px;
+}
+
 .main-block__button-two {
   background-color: #00cbf6;
-  margin-top: 4.75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -532,6 +534,7 @@ h2 {
 .work-examples__tabs-title:hover,
 .work-examples-aktive {
   border: solid 2px var(--color-blocks-main-two);
+  box-sizing: border-box;
 }
 
 .work-examples-aktive {
@@ -541,6 +544,7 @@ h2 {
 .work-examples__tabs-content {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 .work-examples__tabs-content li {
@@ -607,11 +611,7 @@ h2 {
   line-height: 25px;
 }
 
-.work-examples__button {
-  margin-top: 83px;
-}
-
-.work-examples__button img {
+.load-button img {
   margin-right: 15px;
 }
 /* ------------------- BLOCK 5 - WORK EXAMPLES ------------------- */
@@ -838,16 +838,33 @@ h3 {
 
 /* ------------------- BLOCK 8 - GALLERY ------------------- */
 .gallery-wrapper {
-  display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.gallery-wrapper h2 {
-  margin-top: 109px;
+  padding-top: 109px;
+  padding-bottom: 67px;
 }
 
 .gallery {
   margin-top: 72px;
+  margin-bottom: 52px;
 }
 /* ------------------- BLOCK 8 - GALLERY ------------------- */
+
+footer {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--color-shifts-footer);
+  text-align: center;
+  height: 121px;
+  background-color: var(--color-footer);
+}
+
+footer a {
+  text-transform: none;
+  color: var(--color-blocks-main-two);
+}
