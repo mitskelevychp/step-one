@@ -1,0 +1,59 @@
+/* ______________________________ADDE STYLE BY JS_______________________________ */
+/* BLOCK 3 - OUR SERVICES */
+
+.tabs-content__text {
+  display: none;
+  font-weight: 300;
+  line-height: 24.37px;
+  font-size: 13.64px;
+  color: var(--color-shifts-tubs-text);
+  /* height: 140px; */
+  height: 227px;
+}
+
+.tabs-content__text.active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__tabs-title.active {
+  background-color: var(--color-blocks-main-two);
+  border: var(--color-blocks-main-two);
+  color: var(--color-blocks-main-one);
+}
+
+.services__tabs-title.active::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  margin-top: 70px;
+  background-color: var(--color-blocks-main-two);
+}
+/* BLOCK 3 - OUR SERVICES */
+
+/* BLOCK 5 - WORK EXAMPLES */
+.work-examples__content {
+  width: 285px;
+  height: 206px;
+}
+
+.work-examples__content-hidden-part1 {
+  display: none;
+}
+
+.work-examples__content-hidden-part2 {
+  display: none;
+}
+/* .work-examples__content-visible {
+  display: "";
+} */
+
+.purchase-section__button {
+  cursor: pointer;
+}
+
+.purchase-section__button-nonvisible {
+  visibility: hidden;
+}
