@@ -72,7 +72,7 @@ function showAllTabsContent() {
 }
 
 //
-// Общая функция для всех, кроме All
+// Общая функция для всех, кроме All.
 function showContent(a) {
   workExamplesAllTabsContent.forEach((item) => item.classList.remove("active"));
   a.forEach((item) => item.classList.add("active"));
