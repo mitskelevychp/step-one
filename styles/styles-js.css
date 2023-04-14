@@ -34,21 +34,32 @@
 /* BLOCK 3 - OUR SERVICES */
 
 /* BLOCK 5 - WORK EXAMPLES */
-.work-examples__content {
+
+.work-examples__tabs.li {
   width: 285px;
   height: 206px;
 }
 
-.work-examples__content-hidden-part1 {
+.work-examples__content-hidden {
   display: none;
 }
 
-.work-examples__content-hidden-part2 {
+.work-examples__first-cell {
+  width: 285px;
+  height: 206px;
+}
+
+.work-examples__content-hidden.active {
+  display: block;
+}
+
+.we__content-two {
   display: none;
 }
-/* .work-examples__content-visible {
-  display: "";
-} */
+
+.we__content-three {
+  display: none;
+}
 
 .purchase-section__button {
   cursor: pointer;
