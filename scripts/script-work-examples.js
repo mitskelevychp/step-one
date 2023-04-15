@@ -89,20 +89,17 @@ function showNextTabsContent() {
 }
 showNextTabsContent();
 
-// showing first 11 after the click on the All Category
-// showing next 12 pictures + last 12 pictures after the click on the button
+// showing all pictures after the click on the All Category
 weAllTab.addEventListener("click", showAllCategoryContent);
 
 function showAllCategoryContent() {
   for (let i of weAllTabsContent) {
-    i.classList.add("hidden");
+    i.classList.remove("hidden");
   }
-  showTabsContent(weAllTabsContent, 0, 11);
-  weButton.classList.remove("hidden");
+  weButton.classList.add("hidden");
 }
 
-// showing first 11 after the click on the Graphic Design Category
-// showing next 12 pictures + last 12 pictures after the click on the button
+// showing all pictures of Graphic Design Category after the click on the Graphic Design Category
 weGraphDesignTab.addEventListener("click", showGraphDesignCategoryContent);
 
 function showGraphDesignCategoryContent() {
@@ -113,65 +110,47 @@ function showGraphDesignCategoryContent() {
   for (let i of picturesGraphDesign) {
     i.classList.remove("hidden");
   }
-
-  if (picturesGraphDesign.length < 12) {
-    weButton.classList.add("hidden");
-  }
-  // else {
-  //   if (!number) {
-  //     showFunction(arr, nextFirst, nextLast);
-  //     number = true;
-  //   } else {
-  //     showFunction(arr, lastFirst, lastLast);
-  //     weButton.classList.add("hidden");
-  //     number = false;
-  //   }
-  // }
+  weButton.classList.add("hidden");
 }
 
-// function func() {
-//   const arr = [];
-//   for (let i = 0; i < weGraphDesignTab.length; i++) {
-//     arr.push(weGraphDesignTab[i]);
-//   }
-//   arr.forEach((elem) => elem.classList.remove("hidden"));
-// }
-// func();
+// showing all pictures of Web Design Category after the click on the Web Design Category
+weWebDesignTab.addEventListener("click", showWebDesignCategoryContent);
 
-// if (picturesGraphDesign.length < 12) {
-//   weButton.classList.remove("hidden");
-// }
+function showWebDesignCategoryContent() {
+  for (let i of weAllTabsContent) {
+    i.classList.add("hidden");
+  }
 
-//
+  for (let i of picturesWebDesign) {
+    i.classList.remove("hidden");
+  }
+  weButton.classList.add("hidden");
+}
 
-// showing first 11 after the click on the Web Design Category
-// showing next 12 pictures + last 12 pictures after the click on the button
-// weGraphDesignTab.addEventListener("click", showAllCategoryContentDELETE);
+// showing all pictures of Landing Category after the click on the Landing Category
+weLandingTab.addEventListener("click", showLandingCategoryContent);
 
-// function showAllCategoryContentDELETE() {
-//   for (let i of weAllTabsContent) {
-//     i.classList.add("hidden");
-//   }
-//   showTabsContent(picturesGraphDesign, 0, 11);
-//   weButton.classList.remove("hidden");
-// }
+function showLandingCategoryContent() {
+  for (let i of weAllTabsContent) {
+    i.classList.add("hidden");
+  }
 
-// Общая функция для всех, кроме All
-// function showContent(a) {
-//   weAllTabsContent.forEach((item) => item.classList.remove("active"));
-//   a.forEach((item) => item.classList.add("active"));
-// }
+  for (let i of picturesLandingDesign) {
+    i.classList.remove("hidden");
+  }
+  weButton.classList.add("hidden");
+}
 
-// weGraphDesignTab.addEventListener("click", () =>
-//   showContent(picturesGraphDesign)
-// );
+// showing all pictures of Landing Category after the click on the Landing Category
+weWordpressTab.addEventListener("click", showWordpressCategoryContent);
 
-// weWebDesignTab.addEventListener("click", () => showContent(picturesWebDesign));
+function showWordpressCategoryContent() {
+  for (let i of weAllTabsContent) {
+    i.classList.add("hidden");
+  }
 
-// weLandingTab.addEventListener("click", () =>
-//   showContent(picturesLandingDesign)
-// );
-
-// weWordpressTab.addEventListener("click", () =>
-//   showContent(picturesWordpressDesign)
-// );
+  for (let i of picturesWordpressDesign) {
+    i.classList.remove("hidden");
+  }
+  weButton.classList.add("hidden");
+}
