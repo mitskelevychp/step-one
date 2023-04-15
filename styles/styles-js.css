@@ -40,7 +40,7 @@
   height: 206px;
 }
 
-.work-examples__content-hidden {
+.we__content.hidden {
   display: none;
 }
 
@@ -49,9 +49,9 @@
   height: 206px;
 }
 
-.work-examples__content-hidden.active {
+/* .we__content.active {
   display: block;
-}
+} */
 
 .we__content-two {
   display: none;
@@ -65,6 +65,6 @@
   cursor: pointer;
 }
 
-.purchase-section__button-nonvisible {
+.purchase-section__button.hidden {
   visibility: hidden;
 }

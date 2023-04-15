@@ -1,121 +1,177 @@
 /* BLOCK 5 - WORK EXAMPLES */
-let workExamplesTabTitle = document.querySelectorAll(
-  ".work-examples__tabs-title"
-);
-let workExamplesAllTab = document.querySelector(
-  ".work-examples__tabs-title-one"
-);
-let workExamplesGraphDesignTab = document.querySelector(
-  ".work-examples__tabs-title-two"
-);
-let workExamplesWebDesignTab = document.querySelector(
-  ".work-examples__tabs-title-three"
-);
-let workExamplesLandingTab = document.querySelector(
-  ".work-examples__tabs-title-four"
-);
-let workExamplesWordpressTab = document.querySelector(
-  ".work-examples__tabs-title-five"
-);
+let weTabTitle = document.querySelectorAll(".work-examples__tabs-title");
+let weAllTab = document.querySelector(".we__tabs-title-one");
+let weGraphDesignTab = document.querySelector(".we__tabs-title-two");
+let weWebDesignTab = document.querySelector(".we__tabs-title-three");
+let weLandingTab = document.querySelector(".we__tabs-title-four");
+let weWordpressTab = document.querySelector(".we__tabs-title-five");
 
-let workExamplesAllTabsContent = document.querySelectorAll(".we__content-one");
-for (let i of workExamplesAllTabsContent) {
-  i.classList.add("work-examples__content-hidden");
+// take all tabs-content
+let weAllTabsContent = document.querySelectorAll(".we__content");
+// make all tabs hidden
+// take first 11 tabs-content for good lookung the page and + class active
+for (let i of weAllTabsContent) {
+  i.classList.add("hidden");
 }
+function showTabsContent(mainArray, first, last) {
+  const arr = [];
+  for (let i = first; i < last; i++) {
+    arr.push(mainArray[i]);
+  }
+  arr.forEach(showFirstItems);
+  function showFirstItems(elem) {
+    elem.classList.remove("hidden");
+  }
+}
+showTabsContent(weAllTabsContent, 0, 11);
 
-let picturesGraphDesign = document.querySelectorAll(".graph-design");
-let picturesWebDesign = document.querySelectorAll(".web-design");
-let picturesLandingDesign = document.querySelectorAll(".landing");
-let picturesWordpressDesign = document.querySelectorAll(".wordpress");
-
-// установка стиля активного состояния кнопок-табов
-workExamplesTabTitle.forEach((item) => {
+// make style for active tabs
+weTabTitle.forEach((item) => {
   item.addEventListener("click", selectWorkExamplesTab);
 });
 function selectWorkExamplesTab() {
-  workExamplesTabTitle.forEach((item) =>
-    item.classList.remove("work-examples-aktive")
-  );
-  this.classList.add("work-examples-aktive");
+  weTabTitle.forEach((item) => item.classList.remove("aktive"));
+  this.classList.add("aktive");
 }
 
-// показ следующих 12 при клике на кнопку Загрузить больше ДО перехода по вкладкам - ?
+// create attributes for categories of pictures
+let picturesGraphDesign = document.querySelectorAll(
+  "[data-category='graph-design']"
+);
+let picturesWebDesign = document.querySelectorAll(
+  "[data-category='web-design']"
+);
+let picturesLandingDesign = document.querySelectorAll(
+  "[data-category='landing']"
+);
+let picturesWordpressDesign = document.querySelectorAll(
+  "[data-category='wordpress']"
+);
 
-// показ первых 11 All при клике на All ПОСЛЕ ПЕРЕХОДА ПО ВКЛАДКАМ
-workExamplesAllTab.addEventListener("click", showAllTabsContent);
-function showAllTabsContent() {
-  workExamplesAllTabsContent.forEach((item) => item.classList.add("active"));
+// showing next 12 pictures after a click on button + last 12
+// take button
+let weButton = document.querySelector(".purchase-section__button");
+//  make function for first and second clic on the batton + show next 12 pictures (№12 - 23)
+// make a pattern for all categories of tabs
+function chooseCategory(
+  showFunction,
+  arr,
+  nextFirst,
+  nextLast,
+  lastFirst,
+  lastLast
+) {
+  if (!number) {
+    showFunction(arr, nextFirst, nextLast);
+    number = true;
+  } else {
+    showFunction(arr, lastFirst, lastLast);
+    weButton.classList.add("hidden");
+    number = false;
+  }
+}
 
-  // работа с кнопкой Загрузить больше - показ следующих 12 + снова 12
-  let workExamplesButton = document.querySelector(".purchase-section__button");
-  let workExamplesHidePicturesOne =
-    document.querySelectorAll(".we__content-two");
-  let workExamplesHidePicturesTwo =
-    document.querySelectorAll(".we__content-three");
-  let number = false;
+// use the pattern
+let number = false;
 
-  function func() {
-    if (!number) {
-      for (let i = 0; i < workExamplesHidePicturesOne.length; i++) {
-        workExamplesHidePicturesOne[i].classList.remove("we__content-two");
-      }
-      number = true;
-    } else {
-      for (let i = 0; i < workExamplesHidePicturesTwo.length; i++) {
-        workExamplesHidePicturesTwo[i].classList.remove("we__content-three");
-      }
-      workExamplesButton.classList.add("purchase-section__button-nonvisible");
-    }
+function showNextTabsContent() {
+  function showPictures() {
+    chooseCategory(
+      showTabsContent,
+      weAllTabsContent,
+      11,
+      23,
+      23,
+      weAllTabsContent.length
+    );
+  }
+  weButton.addEventListener("click", showPictures);
+}
+showNextTabsContent();
+
+// showing first 11 after the click on the All Category
+// showing next 12 pictures + last 12 pictures after the click on the button
+weAllTab.addEventListener("click", showAllCategoryContent);
+
+function showAllCategoryContent() {
+  for (let i of weAllTabsContent) {
+    i.classList.add("hidden");
+  }
+  showTabsContent(weAllTabsContent, 0, 11);
+  weButton.classList.remove("hidden");
+}
+
+// showing first 11 after the click on the Graphic Design Category
+// showing next 12 pictures + last 12 pictures after the click on the button
+weGraphDesignTab.addEventListener("click", showGraphDesignCategoryContent);
+
+function showGraphDesignCategoryContent() {
+  for (let i of weAllTabsContent) {
+    i.classList.add("hidden");
   }
 
-  workExamplesButton.addEventListener("click", func);
+  for (let i of picturesGraphDesign) {
+    i.classList.remove("hidden");
+  }
+
+  if (picturesGraphDesign.length < 12) {
+    weButton.classList.add("hidden");
+  }
+  // else {
+  //   if (!number) {
+  //     showFunction(arr, nextFirst, nextLast);
+  //     number = true;
+  //   } else {
+  //     showFunction(arr, lastFirst, lastLast);
+  //     weButton.classList.add("hidden");
+  //     number = false;
+  //   }
+  // }
 }
-
-//
-// Общая функция для всех, кроме All................!!!!!!!!!!!!!!!..........
-function showContent(a) {
-  workExamplesAllTabsContent.forEach((item) => item.classList.remove("active"));
-  a.forEach((item) => item.classList.add("active"));
-}
-
-workExamplesGraphDesignTab.addEventListener("click", () =>
-  showContent(picturesGraphDesign)
-);
-
-workExamplesWebDesignTab.addEventListener("click", () =>
-  showContent(picturesWebDesign)
-);
-
-workExamplesLandingTab.addEventListener("click", () =>
-  showContent(picturesLandingDesign)
-);
-
-workExamplesWordpressTab.addEventListener("click", () =>
-  showContent(picturesWordpressDesign)
-);
-
-// Button
-// Логика: если нажата кнопка Общее - при нажатии на кнопку открывать все картинки (общий класс группы 1, общий класс группы 2);
-// Если нажата кнопка конкретной группы - открывать при нажатии группу 3
-// По кажой из групп добавлять классы, чтоб они не нагромождались в неактивном коде
-// let workExamplesButton = document.querySelector(".purchase-section__button");
-// let workExamplesHidePicturesOne = document.querySelectorAll(".we__content-two");
-// let workExamplesHidePicturesTwo =
-//   document.querySelectorAll(".we__content-three");
-// let number = false;
 
 // function func() {
-//   if (!number) {
-//     for (let i = 0; i < workExamplesHidePicturesOne.length; i++) {
-//       workExamplesHidePicturesOne[i].classList.remove("we__content-two");
-//     }
-//     number = true;
-//   } else {
-//     for (let i = 0; i < workExamplesHidePicturesTwo.length; i++) {
-//       workExamplesHidePicturesTwo[i].classList.remove("we__content-three");
-//     }
-//     workExamplesButton.classList.add("purchase-section__button-nonvisible");
+//   const arr = [];
+//   for (let i = 0; i < weGraphDesignTab.length; i++) {
+//     arr.push(weGraphDesignTab[i]);
 //   }
+//   arr.forEach((elem) => elem.classList.remove("hidden"));
+// }
+// func();
+
+// if (picturesGraphDesign.length < 12) {
+//   weButton.classList.remove("hidden");
 // }
 
-// workExamplesButton.addEventListener("click", func);
+//
+
+// showing first 11 after the click on the Web Design Category
+// showing next 12 pictures + last 12 pictures after the click on the button
+// weGraphDesignTab.addEventListener("click", showAllCategoryContentDELETE);
+
+// function showAllCategoryContentDELETE() {
+//   for (let i of weAllTabsContent) {
+//     i.classList.add("hidden");
+//   }
+//   showTabsContent(picturesGraphDesign, 0, 11);
+//   weButton.classList.remove("hidden");
+// }
+
+// Общая функция для всех, кроме All
+// function showContent(a) {
+//   weAllTabsContent.forEach((item) => item.classList.remove("active"));
+//   a.forEach((item) => item.classList.add("active"));
+// }
+
+// weGraphDesignTab.addEventListener("click", () =>
+//   showContent(picturesGraphDesign)
+// );
+
+// weWebDesignTab.addEventListener("click", () => showContent(picturesWebDesign));
+
+// weLandingTab.addEventListener("click", () =>
+//   showContent(picturesLandingDesign)
+// );
+
+// weWordpressTab.addEventListener("click", () =>
+//   showContent(picturesWordpressDesign)
+// );

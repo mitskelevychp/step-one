@@ -523,12 +523,12 @@ h2 {
 }
 
 .work-examples__tabs-title:hover,
-.work-examples-aktive {
+.work-examples__tabs-title.aktive {
   border: solid 2px var(--color-blocks-main-two);
   box-sizing: border-box;
 }
 
-.work-examples-aktive {
+.work-examples__tabs-title.aktive {
   color: var(--color-blocks-main-two);
 }
 
