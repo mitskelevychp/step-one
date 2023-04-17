@@ -230,7 +230,7 @@ body {
 }
 
 .main-block__button-one,
-.purchase-button,
+.purchase__button,
 .load-button {
   background-color: var(--color-blocks-main-two);
 }
@@ -538,22 +538,32 @@ h2 {
   margin-bottom: 70px;
 }
 
-.work-examples__tabs-content__first-cell-wrapper {
+.overlay {
   display: flex;
+  height: 0px;
+  width: 0px;
   flex-direction: column;
   align-items: center;
   border-top: 2.5px solid var(--color-blocks-main-two);
   margin-right: 2px;
+  background-color: var(--color-blocks-third);
+  position: absolute;
+  overflow: hidden;
+  height: 0px;
+  top: 50%;
+  left: 50%;
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
 }
 
-.work-examples__tabs-content__first-cell__icons-wrapper {
+.overlay__icons-wrapper {
   width: 88px;
   margin: 42px 0px 24px;
   display: flex;
   justify-content: space-between;
 }
 
-.work-examples__tabs-content__first-cell__icons-background:nth-child(1) {
+.overlay__icons-background:nth-child(1) {
   border: 1px solid var(--color-blocks-main-two);
   border-radius: 50%;
   width: 40px;
@@ -564,7 +574,7 @@ h2 {
   cursor: pointer;
 }
 
-.work-examples__tabs-content__first-cell__icons-background:nth-child(2) {
+.overlay__icons-background:nth-child(2) {
   background-color: var(--color-blocks-main-two);
   border-radius: 50%;
   width: 40px;
@@ -575,13 +585,13 @@ h2 {
   cursor: pointer;
 }
 
-.work-examples__tabs-content__first-cell__icon {
+.overlay__icon {
   width: 12px;
   height: 12px;
   background-color: var(--color-blocks-main-one);
 }
 
-.work-examples__tabs-content__first-cell-wrapper p:nth-child(2) {
+.overlay p:nth-child(2) {
   text-transform: uppercase;
   color: var(--color-blocks-main-two);
   font-size: var(--font-size-small);
@@ -589,7 +599,7 @@ h2 {
   line-height: 25px;
 }
 
-.work-examples__tabs-content__first-cell-wrapper p:nth-child(3) {
+.overlay a {
   text-transform: capitalize;
   color: var(--color-shifts-secondary-block-five);
   font-size: 12px;
@@ -597,6 +607,11 @@ h2 {
   line-height: 25px;
 }
 
+.overlay a:hover {
+  text-decoration: underline;
+}
+
+/* button */
 .load-button img {
   margin-right: 15px;
 }
@@ -623,6 +638,7 @@ h2 {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 263px;
 }
 
 .post__date {
@@ -836,6 +852,7 @@ h3 {
 }
 /* ------------------- BLOCK 8 - GALLERY ------------------- */
 
+/* ------------------- FOOTER ------------------- */
 footer {
   display: flex;
   align-items: center;
@@ -854,3 +871,4 @@ footer a {
   text-transform: none;
   color: var(--color-blocks-main-two);
 }
+/* ------------------- FOOTER ------------------- */
