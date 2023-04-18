@@ -48,10 +48,12 @@
 }
 /* overlay */
 
+/* .grid-item.hidden */
 .we__content.hidden {
   display: none;
 }
 
+/* .grid-item.active */
 .we__content.active {
   display: block;
 }
@@ -68,27 +70,6 @@
   cursor: pointer;
   position: relative;
 }
-
-/* .gallery__load-button:focus {
-  color: transparent;
-}
-
-.gallery__load-button:focus img {
-  visibility: hidden;
-}
-
-.gallery__load-button:focus::after {
-  position: absolute;
-  content: "";
-  border: 0.2em solid red;
-  width: 1em;
-  height: 1em;
-  top: 0.15em;
-  border-radius: 1em;
-  left: 84px;
-  border-top-color: black;
-  animation: spin 2s linear infinite;
-} */
 
 .button-loading__text {
   color: transparent;
@@ -124,7 +105,13 @@
   /* visibility: hidden; */
   display: none;
 }
-/* BLOCK 5 - WORK EXAMPLES */
-.gallery__button {
+
+/* BLOCK 8 - GALLERY */
+.grid {
+  width: inherit;
 }
-/*  */
+
+.grid-item {
+  margin-bottom: 20px;
+  width: 374px;
+}
