@@ -48,12 +48,10 @@
 }
 /* overlay */
 
-/* .grid-item.hidden */
 .we__content.hidden {
   display: none;
 }
 
-/* .grid-item.active */
 .we__content.active {
   display: block;
 }
@@ -104,14 +102,4 @@
 .load-button.hidden {
   /* visibility: hidden; */
   display: none;
-}
-
-/* BLOCK 8 - GALLERY */
-.grid {
-  width: inherit;
-}
-
-.grid-item {
-  margin-bottom: 20px;
-  width: 374px;
 }

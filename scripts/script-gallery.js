@@ -24,7 +24,7 @@ function someFunction() {
   function func() {
     let elems = [];
     let fragment = document.createDocumentFragment();
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 3; i++) {
       let elem = getItemElement();
       fragment.appendChild(elem);
       elems.push(elem);
