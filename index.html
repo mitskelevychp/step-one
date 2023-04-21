@@ -19,9 +19,12 @@
     <script defer src="./scripts/add.js"></script>
     <script defer src="./scripts/script-services.js"></script>
     <script defer src="./scripts/script-work-examples.js"></script>
-    <script defer src="./scripts/script-reviews.js"></script>
     <script defer src="./scripts/script-gallery.js"></script>
-    <script src="./scripts/jquery-3.6.4.js"></script>
+    <script defer src="./scripts/jquery-3.6.4.js"></script>
+    <!--  -->
+    <script defer src="./scripts/slick.min.js"></script>
+    <!--  -->
+    <script defer src="./scripts/script-reviews.js"></script>
     <script src="./scripts/masonry.pkgd.min.js"></script>
   </head>
   <body>
@@ -1215,66 +1218,104 @@
             alt="icon-reviews"
             class="reviews-icon"
           />
-          <div class="review">
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
+          <div class="slider-wrapper">
+            <div class="slider slider-for review">
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem.
+                </p>
+                <p class="review__name">Sundar Pichai</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/pich.jpeg"
+                  alt="pitch"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem.
+                </p>
+                <p class="review__name">Timothy Cook</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/Cook.jpeg"
+                  alt="cook"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Tempus ultricies
+                  luctus, quam dui laoreet sem, non dictum odio nisi quis massa.
+                  Morbi pulvinar odio eget aliquam facilisis.
+                </p>
+                <p class="review__name">Ilon Musk</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/ilon.jpeg"
+                  alt="ilon"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis.
+                </p>
+                <p class="review__name">Jeffrey Bezos</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/bez.jpeg"
+                  alt="pitch"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis.
+                </p>
+                <p class="review__name">Ilon Musk</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/ilon.jpeg"
+                  alt="ilon"
+                  class="review__photo"
+                />
+              </div>
             </div>
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
-            </div>
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
-            </div>
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
+            <div class="slider slider-nav">
+              <div class="slider__item">
+                <img src="./images/reviews/pich.jpeg" alt="bez" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/Cook.jpeg" alt="cook" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/ilon.jpeg" alt="idiot" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/bez.jpeg" alt="pitch" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/ilon.jpeg" alt="idiot" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="review__photo">
-          <img src="./images/reviews/bez.jpeg" alt="bez" />
-          <img src="./images/reviews/Cook.jpeg" alt="cook" />
-          <img src="./images/reviews/ilon.jpeg" alt="ilon" />
-          <img src="./images/reviews/pich.jpeg" alt="pitch" />
-        </div>
-        <div class="review__carousel">
-          <a href="#"><div class="review__carousel__arrow-left"></div></a>
-          <a href="#"><img src="./images/reviews/bez.jpeg" alt="bez" /></a>
-          <a href="#"><img src="./images/reviews/Cook.jpeg" alt="cook" /></a>
-          <a href="#"><img src="./images/reviews/ilon.jpeg" alt="ilon" /></a>
-          <a href="#"><img src="./images/reviews/pich.jpeg" alt="pitch" /></a>
-          <a href="#"><div class="review__carousel__arrow-right"></div></a>
         </div>
       </div>
       <!-- BLOCK 7 - REVIEWS  - FINISH -->
@@ -1284,7 +1325,6 @@
         <h2>Gallery of best images</h2>
         <div class="decor-line"></div>
         <div class="decor-line"></div>
-        <!-- <div class="gallery"></div> -->
         <div class="gallery grid">
           <div class="grid-item">
             <img src="./images/other/gallery-of-best-images-1.jpg" alt="" />

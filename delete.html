@@ -19,8 +19,13 @@
     <script defer src="./scripts/add.js"></script>
     <script defer src="./scripts/script-services.js"></script>
     <script defer src="./scripts/script-work-examples.js"></script>
-    <script defer src="./scripts/script-reviews.js"></script>
     <script defer src="./scripts/script-gallery.js"></script>
+    <script defer src="./scripts/jquery-3.6.4.js"></script>
+    <!--  -->
+    <script defer src="./scripts/slick.min.js"></script>
+    <!--  -->
+    <script defer src="./scripts/script-reviews.js"></script>
+    <script src="./scripts/masonry.pkgd.min.js"></script>
   </head>
   <body>
     <!-- HEADER START -->
@@ -240,7 +245,7 @@
         </p>
         <div class="purchase__button-wrapper">
           <div class="button main-block__button-background"></div>
-          <a href="#" class="button purchase-button purchase__button">
+          <a href="#" class="button purchase__button">
             <span>purchase now</span>
           </a>
         </div>
@@ -271,245 +276,770 @@
             </li>
           </ul>
           <ul class="work-examples__tabs-content container">
-            <li class="work-examples__first-cell">
-              <div class="work-examples__tabs-content__first-cell-wrapper">
-                <div
-                  class="work-examples__tabs-content__first-cell__icons-wrapper"
-                >
-                  <div
-                    class="work-examples__tabs-content__first-cell__icons-background"
-                  >
-                    <img
-                      src="./images/icons/our-amazing-work-icon-2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="work-examples__tabs-content__first-cell__icons-background"
-                  >
-                    <div
-                      class="work-examples__tabs-content__first-cell__icon"
-                    ></div>
-                  </div>
-                </div>
-                <p>creative design</p>
-                <p>web design</p>
-              </div>
-            </li>
             <li class="we__content" data-category="graph-design">
               <img
                 src="./images/our-amazing-work/graphic-design/graphic-design1.jpg"
                 alt="graphic-design1"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">graphic design</a>
+              </div>
+            </li>
+            <li class="we__content" data-category="graph-design">
+              <img
+                src="./images/our-amazing-work/landing page/landing-page1.jpg"
+                alt="landing-page1"
+              />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">graphic design</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/graphic-design/graphic-design2.jpg"
                 alt="graphic-design2"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
             <li class="we__content" data-category="graph-design">
               <img
                 src="./images/our-amazing-work/graphic-design/graphic-design3.jpg"
                 alt="graphic-design3"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">graphic design</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/graphic-design/graphic-design4.jpg"
                 alt="graphic-design4"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/graphic-design/graphic-design5.jpg"
                 alt="graphic-design5"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="graph-design">
               <img
                 src="./images/our-amazing-work/graphic-design/graphic-design6.jpg"
                 alt="graphic-design6"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">graphic design</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/web design/web-design1.jpg"
                 alt="web-design1"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
             <li class="we__content" data-category="graph-design">
               <img
                 src="./images/our-amazing-work/web design/web-design2.jpg"
                 alt="web-design2"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">graphic design</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/web design/web-design3.jpg"
                 alt="web-design3"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/web design/web-design4.jpg"
                 alt="web-design4"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/web design/web-design5.jpg"
                 alt="web-design5"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
             <li class="we__content" data-category="graph-design">
               <img
                 src="./images/our-amazing-work/landing page/landing-page1.jpg"
                 alt="landing-page1"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">graphic design</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/landing page/landing-page2.jpg"
                 alt="landing-page2"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/landing page/landing-page3.jpg"
                 alt="landing-page3"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
             <li class="we__content" data-category="graph-design">
               <img
                 src="./images/our-amazing-work/landing page/landing-page4.jpg"
                 alt="landing-page4"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">graphic design</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/landing page/landing-page5.jpg"
                 alt="landing-page5"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
-            <li class="we__content" data-category="landing">
+            <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/landing page/landing-page6.jpg"
                 alt="landing-page6"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="web-design">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress1.jpg"
                 alt="wordpress1"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">web design</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress2.jpg"
                 alt="wordpress2"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress3.jpg"
                 alt="wordpress3"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages/p></a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress4.jpg"
                 alt="wordpress4"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress5.jpg"
                 alt="wordpress5"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress6.jpg"
                 alt="wordpress6"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/landing page/landing-page2.jpg"
                 alt="landing-page2"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/landing page/landing-page1.jpg"
                 alt="landing-page1"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/landing page/landing-page5.jpg"
                 alt="landing-page5"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/landing page/landing-page3.jpg"
                 alt="landing-page3"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/landing page/landing-page4.jpg"
                 alt="landing-page4"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/landing page/landing-page6.jpg"
                 alt="landing-page6"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress2.jpg"
                 alt="wordpress2"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress1.jpg"
                 alt="wordpress1"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress/p></a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress4.jpg"
                 alt="wordpress4"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress3.jpg"
                 alt="wordpress3"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="landing">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress6.jpg"
                 alt="wordpress6"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">landing pages</a>
+              </div>
             </li>
             <li class="we__content" data-category="wordpress">
               <img
                 src="./images/our-amazing-work/wordpress/wordpress5.jpg"
                 alt="wordpress5"
               />
+              <div class="overlay">
+                <div class="overlay__icons-wrapper">
+                  <div class="overlay__icons-background">
+                    <img
+                      src="./images/icons/our-amazing-work-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="overlay__icons-background">
+                    <div class="overlay__icon"></div>
+                  </div>
+                </div>
+                <p>creative design</p>
+                <a href="#">wordpress</a>
+              </div>
             </li>
           </ul>
-          <div class="button load-button purchase-section__button">
-            <img src="./images/icons/plus.png" alt="" />
-            <span>Load More</span>
+          <div class="button load-button we__load-button">
+            <img
+              src="./images/icons/plus.png"
+              alt=""
+              class="we__load-button-img"
+            />
+            <span class="we__load-button-text">Load More</span>
           </div>
         </div>
       </div>
@@ -688,80 +1218,150 @@
             alt="icon-reviews"
             class="reviews-icon"
           />
-          <div class="review">
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
+          <div class="slider-wrapper">
+            <div class="slider slider-for review">
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem.
+                </p>
+                <p class="review__name">Sundar Pichai</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/pich.jpeg"
+                  alt="pitch"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem.
+                </p>
+                <p class="review__name">Timothy Cook</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/Cook.jpeg"
+                  alt="cook"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Tempus ultricies
+                  luctus, quam dui laoreet sem, non dictum odio nisi quis massa.
+                  Morbi pulvinar odio eget aliquam facilisis.
+                </p>
+                <p class="review__name">Ilon Musk</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/ilon.jpeg"
+                  alt="ilon"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis.
+                </p>
+                <p class="review__name">Jeffrey Bezos</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/bez.jpeg"
+                  alt="pitch"
+                  class="review__photo"
+                />
+              </div>
+              <div class="review__text">
+                <p>
+                  Integer dignissim, augue tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
+                  laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
+                  odio eget aliquam facilisis.
+                </p>
+                <p class="review__name">Ilon Musk</p>
+                <p class="review__position">UX designer</p>
+                <img
+                  src="./images/reviews/ilon.jpeg"
+                  alt="ilon"
+                  class="review__photo"
+                />
+              </div>
             </div>
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
-            </div>
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
-            </div>
-            <div class="review__text">
-              <p>
-                Integer dignissim, augue tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis. Tempus ultricies luctus, quam dui
-                laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar
-                odio eget aliquam facilisis.
-              </p>
-              <p class="review__name">Hasan Ali</p>
-              <p class="review__position">UX designer</p>
+            <div class="slider slider-nav">
+              <div class="slider__item">
+                <img src="./images/reviews/pich.jpeg" alt="bez" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/Cook.jpeg" alt="cook" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/ilon.jpeg" alt="idiot" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/bez.jpeg" alt="pitch" />
+              </div>
+              <div class="slider__item">
+                <img src="./images/reviews/ilon.jpeg" alt="idiot" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="review__photo">
-          <img src="./images/reviews/bez.jpeg" alt="bez" />
-          <img src="./images/reviews/Cook.jpeg" alt="cook" />
-          <img src="./images/reviews/ilon.jpeg" alt="ilon" />
-          <img src="./images/reviews/pich.jpeg" alt="pitch" />
-        </div>
-        <div class="review__carousel">
-          <a href="#"><div class="review__carousel__arrow-left"></div></a>
-          <a href="#"><img src="./images/reviews/bez.jpeg" alt="bez" /></a>
-          <a href="#"><img src="./images/reviews/Cook.jpeg" alt="cook" /></a>
-          <a href="#"><img src="./images/reviews/ilon.jpeg" alt="ilon" /></a>
-          <a href="#"><img src="./images/reviews/pich.jpeg" alt="pitch" /></a>
-          <a href="#"><div class="review__carousel__arrow-right"></div></a>
         </div>
       </div>
       <!-- BLOCK 7 - REVIEWS  - FINISH -->
 
       <!-- BLOCK 8 - GALLERY - START -->
       <div class="gallery-wrapper container">
-        <h2>What People Say About theHam</h2>
+        <h2>Gallery of best images</h2>
         <div class="decor-line"></div>
         <div class="decor-line"></div>
-        <div class="gallery"></div>
-        <a href="#" class="button load-button"
-          ><img src="./images/icons/plus.png" alt="icon" />
-          <span>Load More</span>
-        </a>
+        <div class="gallery grid">
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-1.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-2.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-3.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-1.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-6.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-1.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-6.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-1.jpg" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="./images/other/gallery-of-best-images-5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="button load-button gallery__load-button">
+          <img
+            src="./images/icons/plus.png"
+            alt="icon"
+            class="gallery__load-button-img"
+          />
+          <span class="gallery__load-button-text">Load More</span>
+        </div>
       </div>
       <!-- BLOCK 8 - GALLERY - FINISH -->
     </main>
