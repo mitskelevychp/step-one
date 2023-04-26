@@ -815,11 +815,25 @@ h3 {
 }
 
 .grid {
-  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .grid-item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.grid-item:hover img {
+  opacity: 1;
+}
+
+.grid-sizer {
   width: 374px;
 }
 /* ------------------- BLOCK 8 - GALLERY ------------------- */

@@ -1,9 +1,23 @@
 /* BLOCK 8 - GALLERY */
+// var grid = document.querySelector(".grid");
+// var msnry = new Masonry(grid, {
+//   // options
+//   // itemSelector: '.grid-item',
+//   // columnWidth: 5,
+//   gutter: 18,
+//   horizontalOrder: true,
+// });
+
 var grid = document.querySelector(".grid");
-var msnry = new Masonry(grid, {
-  // options
-  gutter: 18,
-  horizontalOrder: true,
+var msnry = null;
+
+window.addEventListener('load', function() {
+  msnry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    gutter: 19,
+    // horizontalOrder: true,
+  });
 });
 
 //
@@ -37,7 +51,7 @@ function someFunction() {
     function getItemElement() {
       let elem = document.createElement("div");
       let rand = Math.random();
-      let randPictures = rand > 0.7 ? 1 : rand > 0.3 ? 3 : rand > 0 ? 5 : "";
+      let randPictures = rand > 0.9 ? 1 : rand > 0.8 ? 2 : rand > 0.7 ? 3 : rand > 0.6 ? 4 : rand > 0.5 ? 5 : rand > 0.4 ? 6 : rand > 0.3 ? 7 : rand > 0.2 ? 8 : rand > 0 ? 9 : "";
       let img = `<img src="./images/other/gallery-of-best-images-${randPictures}.jpg" alt="" />`;
       elem.className = "grid-item";
       elem.insertAdjacentHTML("afterbegin", img);
