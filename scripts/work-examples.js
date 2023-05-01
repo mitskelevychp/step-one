@@ -1,4 +1,7 @@
 /* BLOCK 5 - WORK EXAMPLES */
+
+//
+// Variables
 let weTabTitle = document.querySelectorAll(".work-examples__tabs-title");
 let weAllTab = document.querySelector(".we__tabs-title-one");
 let weGraphDesignTab = document.querySelector(".we__tabs-title-two");
@@ -12,10 +15,8 @@ let picturesGraphDesign = document.querySelectorAll(
 let picturesWebDesign = document.querySelectorAll(
   "[data-category='web-design']"
 );
-let picturesLandingDesign = document.querySelectorAll(
-  "[data-category='landing']"
-);
-let picturesWordpressDesign = document.querySelectorAll(
+let picturesLanding = document.querySelectorAll("[data-category='landing']");
+let picturesWordpress = document.querySelectorAll(
   "[data-category='wordpress']"
 );
 
@@ -23,7 +24,8 @@ let weButton = document.querySelector(".we__load-button");
 let weButtonImg = document.querySelector(".we__load-button-img");
 let weButtonText = document.querySelector(".we__load-button-text");
 
-// tabs
+//
+// Tabs
 // take all tabs-content
 let weAllTabsContent = document.querySelectorAll(".we__content");
 for (let i of weAllTabsContent) {
@@ -43,15 +45,16 @@ showTabsContent(weAllTabsContent, 0, 12);
 
 // make style for active tabs
 weTabTitle.forEach((item) => {
-  item.addEventListener("click", selectWorkExamplesTab);
+  item.addEventListener("click", selectWEtab);
 });
-function selectWorkExamplesTab() {
+function selectWEtab() {
   weTabTitle.forEach((item) => item.classList.remove("aktive"));
   this.classList.add("aktive");
 }
 
-// pictures
-// showing next 12 pictures after a click on button + last 12
+//
+// Pictures
+// Showing next 12 pictures after a click on button + last 12
 let number = false;
 
 function showNextTabsContent() {
@@ -74,7 +77,7 @@ function showNextTabsContent() {
 }
 showNextTabsContent();
 
-// pattern
+// a pattern
 function show(a, b, c, time, func) {
   setTimeout(startProcess, 0);
   function startProcess() {
@@ -93,7 +96,8 @@ function show(a, b, c, time, func) {
 }
 //
 
-// showing all pictures after the click on each of the Category
+//
+// Showing all pictures after the click on each of the Category
 weAllTab.addEventListener("click", showAllCategoryContent);
 function showAllCategoryContent() {
   weButton.classList.remove("hidden");
@@ -117,22 +121,22 @@ function showCategoryContent(arrCategory) {
 //
 
 // showing all pictures on each of the Catagiry after a click using the pattern above
-weGraphDesignTab.addEventListener("click", showGraphDesignCategoryContent);
-function showGraphDesignCategoryContent() {
+weGraphDesignTab.addEventListener("click", showGraphDesignContent);
+function showGraphDesignContent() {
   showCategoryContent(picturesGraphDesign);
 }
 
-weWebDesignTab.addEventListener("click", showWebDesignCategoryContent);
-function showWebDesignCategoryContent() {
+weWebDesignTab.addEventListener("click", showWebDesignContent);
+function showWebDesignContent() {
   showCategoryContent(picturesWebDesign);
 }
 
-weLandingTab.addEventListener("click", showLandingCategoryContent);
-function showLandingCategoryContent() {
-  showCategoryContent(picturesLandingDesign);
+weLandingTab.addEventListener("click", showLandingContent);
+function showLandingContent() {
+  showCategoryContent(picturesLanding);
 }
 
-weWordpressTab.addEventListener("click", showWordpressCategoryContent);
-function showWordpressCategoryContent() {
-  showCategoryContent(picturesWordpressDesign);
+weWordpressTab.addEventListener("click", showWordpressContent);
+function showWordpressContent() {
+  showCategoryContent(picturesWordpress);
 }

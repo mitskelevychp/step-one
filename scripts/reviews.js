@@ -1,4 +1,7 @@
 /* BLOCK 7 - REVIEWS */
+
+//
+// Slick gallery for reviews
 $(document).ready(function () {
   $(".slider-for").slick({
     slidesToShow: 1,

@@ -1,40 +1,36 @@
 /* BLOCK 8 - GALLERY */
-// var grid = document.querySelector(".grid");
-// var msnry = new Masonry(grid, {
-//   // options
-//   // itemSelector: '.grid-item',
-//   // columnWidth: 5,
-//   gutter: 18,
-//   horizontalOrder: true,
-// });
 
-var grid = document.querySelector(".grid");
+//
+// Grid Mansory
+// connection
+var grid = document.querySelector(".gallery");
 var msnry = null;
 
-window.addEventListener('load', function() {
+// without the Window object pictures are showing not correctly
+window.addEventListener("load", function () {
   msnry = new Masonry(grid, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
+    itemSelector: ".gallery-item",
+    columnWidth: ".gallery-sizer",
     gutter: 19,
-    // horizontalOrder: true,
   });
 });
 
 //
 // button
 let loadButton = document.querySelector(".gallery__load-button");
-let galleryPictures = document.querySelectorAll(".grid-item");
+let galleryPictures = document.querySelectorAll(".gallery-item");
 let loadButtonImg = document.querySelector(".gallery__load-button-img");
 let loadButtonText = document.querySelector(".gallery__load-button-text");
 
 loadButton.addEventListener("click", showLoadProcess);
 
-// someFunction - show pictures after a click using a pattern "script-work-examples.js"
+//
+// show pictures after a click using a pattern from "work-examples.js"
 function showLoadProcess() {
-  show(loadButton, loadButtonImg, loadButtonText, 2000, someFunction);
+  show(loadButton, loadButtonImg, loadButtonText, 2000, showRandomPictures);
 }
 
-function someFunction() {
+function showRandomPictures() {
   function func() {
     let elems = [];
     let fragment = document.createDocumentFragment();
@@ -51,9 +47,28 @@ function someFunction() {
     function getItemElement() {
       let elem = document.createElement("div");
       let rand = Math.random();
-      let randPictures = rand > 0.9 ? 1 : rand > 0.8 ? 2 : rand > 0.7 ? 3 : rand > 0.6 ? 4 : rand > 0.5 ? 5 : rand > 0.4 ? 6 : rand > 0.3 ? 7 : rand > 0.2 ? 8 : rand > 0 ? 9 : "";
+      let randPictures =
+        rand > 0.9
+          ? 1
+          : rand > 0.8
+          ? 2
+          : rand > 0.7
+          ? 3
+          : rand > 0.6
+          ? 4
+          : rand > 0.5
+          ? 5
+          : rand > 0.4
+          ? 6
+          : rand > 0.3
+          ? 7
+          : rand > 0.2
+          ? 8
+          : rand > 0
+          ? 9
+          : "";
       let img = `<img src="./images/other/gallery-of-best-images-${randPictures}.jpg" alt="" />`;
-      elem.className = "grid-item";
+      elem.className = "gallery-item";
       elem.insertAdjacentHTML("afterbegin", img);
       return elem;
     }

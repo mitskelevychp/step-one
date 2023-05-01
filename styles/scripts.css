@@ -1,0 +1,58 @@
+/* ______________________________ADDE STYLE BY JS_______________________________ */
+/* BLOCK 3 - OUR SERVICES */
+.tabs-content__text,
+.we__content.hidden,
+.we__content-two,
+.we__content-three,
+.load-button.hidden {
+  display: none;
+}
+
+.tabs-content__text {
+  font-weight: 300;
+  line-height: 24.37px;
+  font-size: 13.64px;
+  color: var(--color-shifts-tubs-text);
+  height: 227px;
+}
+
+.tabs-content__text.active {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BLOCK 5 - WORK EXAMPLES */
+.load-button {
+  cursor: pointer;
+  position: relative;
+}
+
+.button-loading__text {
+  color: transparent;
+}
+
+.button-loading__img {
+  visibility: hidden;
+}
+
+.button-loading::after {
+  position: absolute;
+  content: "";
+  border: 5px solid var(--color-blocks-main-one);
+  width: 25px;
+  height: 25px;
+  top: 19px;
+  border-radius: 25px;
+  left: 72px;
+  border-top-color: var(--color-blocks-main-two);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
