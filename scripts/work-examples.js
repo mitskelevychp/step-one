@@ -140,3 +140,27 @@ weWordpressTab.addEventListener("click", showWordpressContent);
 function showWordpressContent() {
   showCategoryContent(picturesWordpress);
 }
+
+//
+//
+// let pictureOne = document.querySelector(".picture-one");
+// let center = document.querySelector(".center");
+// let pictureTwoHTML =
+//   "<div class='overlay'><div class='overlay__icons-wrapper'><div class='overlay__icons-background'><img src='./images/icons/our-amazing-work-icon-2.svg' alt='icon2'/></div><div class='overlay__icons-background'><div class='overlay__icon'></div></div></div><p>creative design</p><a href='#'>landing pages</a></div>";
+
+// center.insertAdjacentHTML("beforeend", pictureTwoHTML);
+// let pictureTwo = center.querySelector(".overlay");
+// pictureTwo.style.display = "none";
+
+// pictureOne.addEventListener("mouseover", funcOne);
+// center.addEventListener("mouseout", funcTwo);
+
+// function funcOne() {
+//   pictureTwo.style.display = "block";
+// }
+
+// function funcTwo(event) {
+//   if (!event.relatedTarget || !event.relatedTarget.closest(".overlay")) {
+//     pictureTwo.style.display = "none";
+//   }
+// }
